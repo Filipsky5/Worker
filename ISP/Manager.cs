@@ -6,16 +6,12 @@ using System.Threading.Tasks;
 
 namespace ISP
 {
-    class Manager
+    class Manager : Worker
     {
-        IWorker worker;
-            void setWorker(IWorker _worker)
-        {
-            worker = _worker;
-        }
+   
         void manage()
         {
-            this.worker.work();
+            this.work();
         }
     }
 }
